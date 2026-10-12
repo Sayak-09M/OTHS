@@ -1,0 +1,73 @@
+schema_version: "1.0.0"
+detectors:
+  IN_AADHAAR:
+    enabled: true
+    require_checksum: true
+    minimum_context_probability: 0.80
+    minimum_visual_type_score: 0.80
+    minimum_ocr_confidence: 0.65
+    minimum_ocr_passes: 2
+  IN_PAN:
+    enabled: true
+    require_checksum: false
+    minimum_context_probability: 0.80
+    minimum_visual_type_score: 0.80
+    minimum_ocr_confidence: 0.70
+    minimum_ocr_passes: 2
+    strong_consensus_ocr_passes: 3
+    strong_consensus_minimum_ocr_confidence: 0.50
+  IN_EPIC:
+    enabled: true
+    require_checksum: false
+    minimum_context_probability: 0.80
+    minimum_visual_type_score: 0.80
+    minimum_ocr_confidence: 0.70
+    minimum_ocr_passes: 2
+    strong_consensus_ocr_passes: 3
+    strong_consensus_minimum_ocr_confidence: 0.50
+  IN_ABHA:
+    enabled: true
+    require_checksum: false
+    minimum_context_probability: 0.80
+    minimum_visual_type_score: 0.80
+    minimum_ocr_confidence: 0.70
+    minimum_ocr_passes: 2
+  IN_PASSPORT:
+    enabled: true
+    require_checksum: false
+    minimum_context_probability: 0.80
+    minimum_visual_type_score: 0.80
+    minimum_ocr_confidence: 0.75
+    minimum_ocr_passes: 2
+    strong_consensus_ocr_passes: 3
+    strong_consensus_minimum_ocr_confidence: 0.50
+  IN_DRIVING_LICENCE:
+    enabled: true
+    require_checksum: false
+    minimum_context_probability: 0.80
+    minimum_visual_type_score: 0.80
+    minimum_ocr_confidence: 0.75
+    minimum_ocr_passes: 2
+    strong_consensus_ocr_passes: 3
+    strong_consensus_minimum_ocr_confidence: 0.50
+  NP_NATIONAL_ID:
+    enabled: true
+    require_checksum: false
+    minimum_context_probability: 0.80
+    minimum_visual_type_score: 0.80
+    minimum_ocr_confidence: 0.75
+    minimum_ocr_passes: 2
+  BD_NID:
+    enabled: true
+    require_checksum: false
+    minimum_context_probability: 0.80
+    minimum_visual_type_score: 0.80
+    minimum_ocr_confidence: 0.75
+    minimum_ocr_passes: 2
+  LK_NIC:
+    enabled: true
+    require_checksum: false
+    minimum_context_probability: 0.80
+    minimum_visual_type_score: 0.80
+    minimum_ocr_confidence: 0.75
+    minimum_ocr_passes: 2

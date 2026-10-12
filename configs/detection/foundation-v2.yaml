@@ -1,0 +1,17 @@
+schema_version: "1.0.0"
+seed: 20261010
+input_size: 224
+batch_size: 16
+epochs: 30
+learning_rate: 0.0003
+weight_decay: 0.01
+pretrained: true
+num_workers: 0
+checkpoint: document/foundation-v2-best.pt
+
+# NON_ID records train the presence head but are excluded from type and corner
+# loss. Locked-test data remains absent from fitting and checkpoint selection.
+train_manifest: datasets/processed/id-foundation-v2/train.jsonl
+validation_manifest: datasets/processed/id-foundation-v2/validation.jsonl
+registry: datasets/manifests/registry.yaml
+artifact_root: artifacts

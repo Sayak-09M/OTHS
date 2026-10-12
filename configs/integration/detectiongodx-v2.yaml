@@ -1,0 +1,29 @@
+schema_version: "1.0.0"
+producer_role: A3
+output_contract: dgx.observation.v1
+software_repository: https://github.com/Arbood-Ai/DatavaultX-DetectionGodX
+software_commit: 5cdd7e093b5bd8bddfff7363434d18fa05e98f1b
+contract_digests:
+  dgx.observation.v1: f9a7c16517b731e9ce3d02008d4cfb62bcba778af3f49272db281e7aff67617e
+  dgx.worker-result.v1: d15a01e2409175a669bc9a5d2e5d2ddd547ae64829d307fcaab2ed6f17994e16
+  dgx.runtime-manifest.v1: 05f3c3366fd9a3238ab71bbef2f0d2d75660769c0b14cb1331a7711a6cf44ad0
+
+# A3 emits observations only. DetectionGodX A4 owns calibration, assurance,
+# review decisions, and publication of dgx.finding.v1 records.
+forbidden_a3_outputs:
+  - dgx.finding.v1
+  - assurance_decision
+
+privacy:
+  durable_raw_values: false
+  durable_raw_text: false
+  client_scoped_fingerprint: hmac-sha256-client-v1
+  evidence_artifact_encryption_required: true
+
+execution:
+  network_mode: none
+  default_checkpoint: artifacts/document/foundation-v2-best.pt
+  default_policy: configs/inference/mixed-identities.yaml
+  full_page_ocr_always: true
+  model_guided_rectified_ocr: true
+  model_output_is_not_an_ocr_gate: true

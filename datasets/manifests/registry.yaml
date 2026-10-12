@@ -1,0 +1,122 @@
+schema_version: 1
+updated: 2026-10-10
+
+datasets:
+  - id: midv-lait-v1-india-nepal-subset
+    status: approved
+    approval: approved_for_baseline_training_and_evaluation
+    purpose:
+      - identity_document_localization
+      - field_text_recognition
+      - indic_script_ocr
+      - perspective_and_capture_robustness
+    source:
+      organization: Smart Engines research authors
+      canonical_page: https://zenodo.org/records/18781343
+      acquisition: ftp://smartengines.com/midv-lait/dataset/
+    content: mock_or_publicly_licensed_source_documents_with_modified_text
+    scope:
+      included:
+        - ind_aadhaar_bengali
+        - ind_aadhaar_devanagari
+        - ind_aadhaar_gujarati
+        - ind_aadhaar_gurmukhi
+        - ind_aadhaar_kannada
+        - ind_aadhaar_malayalam
+        - ind_aadhaar_odia
+        - ind_aadhaar_tamil
+        - ind_aadhaar_telugu
+        - npl_id
+      excluded_from_active_training:
+        - ind_aadhaar_arabic
+    records:
+      document_groups: 90
+      files: 3780
+      json_annotations_validated: 1890
+    licence: CC-BY-SA-2.5
+    verified_integrity:
+      algorithm: sha256_tree_over_sorted_file_hashes
+      value: d6d63c07ec006b0c359b971961b419fd9b752565d23e1256b78bbb0812f0285e
+      partial_files: 0
+    local_path: datasets/raw/midv-lait/priority-subset
+    deferred_path: datasets/raw/midv-lait/deferred-urdu
+    incomplete_full_archive: datasets/raw/midv-lait/dataset.zip.part
+
+  - id: midv-2020-v1-core
+    status: approved
+    approval: approved_for_generic_id_document_pretraining_and_hard_negatives
+    purpose:
+      - identity_document_localization
+      - field_text_recognition
+      - document_type_classification
+      - scan_rotation_robustness
+    source:
+      organizations:
+        - Smart Engines research authors
+        - L3i Laboratory, La Rochelle University
+      canonical_page: https://zenodo.org/records/18786808
+    content: mock_identity_documents_with_artificial_text_and_generated_faces
+    licence: CC-BY-SA-2.5
+    attribution_note: Generated Photos attribution requested for derivative works
+    expected_integrity:
+      algorithm: md5
+      templates.tar: 5bf6bd22df4808d4c8df9500e01f4f0a
+      scan_upright.tar: f6e0aeb6981a89aa2dfc717575fcea28
+      scan_rotated.tar: 3db227b453121b7e0a8c152e79988edf
+    verified_integrity:
+      templates.tar: 5bf6bd22df4808d4c8df9500e01f4f0a
+      scan_upright.tar: f6e0aeb6981a89aa2dfc717575fcea28
+      scan_rotated.tar: 3db227b453121b7e0a8c152e79988edf
+    records:
+      mock_document_templates: 1000
+      upright_scans: 1000
+      rotated_scans: 1000
+      archive_entries_each: 1022
+    local_path: datasets/raw/midv-2020
+
+  - id: synthetic-south-asia-id-v2
+    status: approved
+    approval: approved_for_local_training_and_evaluation
+    purpose:
+      - identity_document_presence
+      - document_type_classification
+      - identity_document_localization
+      - hospital_and_hotel_hard_negatives
+      - capture_quality_robustness
+    source:
+      organization: local_project
+      generator: scripts/build_foundation_v2.py
+      generated_on: 2026-10-10
+      format_references:
+        aadhaar: https://uidai.gov.in/images/46Circular_for_Implementation_of_Virtual_ID_UID_Token_and_Limited_KYC_0001_compressed.pdf
+        pan: https://www.incometaxindia.gov.in/documents/d/guest/1-permanent-account-number-pan-pdf
+        abha: https://abdm.gov.in/strapicms/uploads/ABDM_STANDEE_24aabea939.pdf
+        driving_licence_card: https://parivahan.gov.in/sites/default/files/NOTIFICATION%26ADVISORY/GSR%201073E.pdf
+        nepal_nin: https://www.donidcr.gov.np/pages/abboyed-asked-questions--rational-identity-10/
+        bangladesh_nid: https://www.bcc-ca.gov.bd/media/content/10024
+        sri_lanka_nic: https://drp.gov.lk/en/faq.php
+    content: visibly_watermarked_fictional_records_with_geometric_avatars
+    personal_data: none_intentionally_generated_or_imported
+    identifier_note: format_examples_are_not_issuer_assigned_or_authority_verified
+    licence: Project-internal synthetic data
+    local_path: datasets/generated/synthetic-south-asia-id-v2
+
+  - id: legacy-roboflow-pan-ocr
+    status: quarantined
+    approval: prohibited_pending_privacy_and_provenance_review
+    local_path: archive
+    declared_licence: CC-BY-4.0
+    reason: sample_audit_found_apparent_real_identity_document_and_personal_data
+
+  - id: legacy-roboflow-aadhaar-entity
+    status: quarantined
+    approval: prohibited_pending_privacy_and_provenance_review
+    local_path: adhaar
+    declared_licence: CC-BY-4.0
+    reason: sample_audit_found_apparent_real_identity_document_and_personal_data
+
+  - id: legacy-custom-synthetic-aadhaar
+    status: quarantined
+    approval: prohibited_pending_licence_and_generation_provenance_review
+    local_path: Custom-Generated Synthetic Aadhar Card Dataset for Robust Identity Authentication Research
+    reason: no_authoritative_licence_or_generation_manifest_found_in_workspace

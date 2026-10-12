@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.invalid/schemas/canonical-id-record-1.0.0.json",
+  "title": "Canonical identity-document training record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "record_id",
+    "dataset_id",
+    "identity_group",
+    "split",
+    "country",
+    "document_type",
+    "script",
+    "modality",
+    "image",
+    "annotations",
+    "provenance"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "record_id": {"type": "string", "minLength": 1},
+    "dataset_id": {"type": "string", "minLength": 1},
+    "identity_group": {"type": "string", "minLength": 1},
+    "split": {
+      "enum": ["train", "validation", "calibration", "locked_test"]
+    },
+    "country": {"type": "string", "pattern": "^[A-Z]{2}$"},
+    "document_type": {"type": "string", "minLength": 1},
+    "script": {"type": "string", "minLength": 1},
+    "modality": {"type": "string", "minLength": 1},
+    "image": {"$ref": "#/$defs/image"},
+    "annotations": {"$ref": "#/$defs/annotations"},
+    "provenance": {"$ref": "#/$defs/provenance"}
+  },
+  "$defs": {
+    "point": {
+      "type": "array",
+      "prefixItems": [{"type": "number"}, {"type": "number"}],
+      "items": false,
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "polygon": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/point"},
+      "minItems": 3
+    },
+    "image": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["storage", "path", "width", "height", "size_bytes"],
+      "properties": {
+        "storage": {"enum": ["file", "tar"]},
+        "path": {"type": "string", "minLength": 1},
+        "member": {"type": "string", "minLength": 1},
+        "width": {"type": "integer", "minimum": 1},
+        "height": {"type": "integer", "minimum": 1},
+        "size_bytes": {"type": "integer", "minimum": 1}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"storage": {"const": "tar"}}},
+          "then": {"required": ["member"]}
+        }
+      ]
+    },
+    "field": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_name",
+        "canonical_name",
+        "pii_type",
+        "polygon",
+        "script",
+        "value"
+      ],
+      "properties": {
+        "source_name": {"type": "string"},
+        "canonical_name": {"type": "string"},
+        "pii_type": {"type": "string"},
+        "polygon": {"$ref": "#/$defs/polygon"},
+        "script": {"type": ["string", "null"]},
+        "value": {"type": ["string", "number", "null"]}
+      }
+    },
+    "annotations": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["document_polygon", "document_out_of_frame", "fields"],
+      "properties": {
+        "document_polygon": {"$ref": "#/$defs/polygon"},
+        "document_out_of_frame": {"type": "boolean"},
+        "fields": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/field"}
+        },
+        "rectification_template_record_id": {"type": "string"},
+        "ideal_size": {
+          "type": "array",
+          "prefixItems": [{"type": "number"}, {"type": "number"}],
+          "items": false,
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "document_width_mm": {"type": "number", "exclusiveMinimum": 0}
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["content_class", "licence"],
+      "properties": {
+        "content_class": {"type": "string", "minLength": 1},
+        "licence": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}

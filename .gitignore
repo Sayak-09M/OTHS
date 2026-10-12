@@ -1,0 +1,32 @@
+.DS_Store
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Sensitive, quarantined, and reproducible data stay outside version control.
+datasets/raw/
+datasets/processed/
+datasets/generated/
+adhaar/
+archive/
+archive.zip
+Custom-Generated Synthetic Aadhar Card Dataset for Robust Identity Authentication Research/
+
+# Generated training artifacts may contain scan locations or learned
+# representations of PII. Publish only the reviewed release checkpoint and its
+# aggregate validation report; keep scans, logs, audits, and other checkpoints
+# local.
+artifacts/*
+!artifacts/document/
+artifacts/document/*
+!artifacts/document/foundation-v2-best.pt
+!artifacts/reports/
+artifacts/reports/*
+!artifacts/reports/foundation-v2-validation.json
+checkpoints/
+runs/
+
+# Local build/install metadata.
+*.egg-info/

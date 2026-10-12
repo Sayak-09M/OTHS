@@ -1,0 +1,17 @@
+schema_version: "1.0.0"
+seed: 20261010
+input_size: 224
+batch_size: 16
+epochs: 25
+learning_rate: 0.0003
+weight_decay: 0.01
+pretrained: true
+num_workers: 0
+checkpoint: document/best.pt
+
+# Locked-test data is deliberately absent. Model fitting uses train; checkpoint
+# selection uses validation. Calibration and final evaluation are separate runs.
+train_manifest: datasets/processed/id-foundation-v1/train.jsonl
+validation_manifest: datasets/processed/id-foundation-v1/validation.jsonl
+registry: datasets/manifests/registry.yaml
+artifact_root: artifacts

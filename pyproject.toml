@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pii-id-model"
+version = "0.1.0"
+description = "Local-first India-priority government identity-document detection models"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "Pillow==12.3.0",
+  "PyMuPDF==1.26.5",
+  "PyYAML==6.0.3",
+  "torch==2.14.1",
+  "torchvision==0.29.1",
+]
+
+[project.scripts]
+pii-id-scan = "pii_id.cli:main"
+
+[project.optional-dependencies]
+dev = [
+  "pytest==9.1.1",
+  "ruff==0.17.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]

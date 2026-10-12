@@ -1,0 +1,824 @@
+{
+  "checkpoint_sha256": "1f2f64831a0df868806d14b71f13b07a1a0ce24b42020f5550c2a2f9dd2b988d",
+  "device": "mps",
+  "format": "pii-id-document-validation-report",
+  "format_version": "1.0.0",
+  "manifest_sha256": "b84c04259f57bf5e585fcc40393807b2f5d0567e318432e27217d184845f4a8b",
+  "metrics": {
+    "by_country": {
+      "AL": {
+        "document_type_accuracy": 1.0,
+        "examples": 60,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9299766650132185,
+        "negative_examples": 0,
+        "positive_examples": 60,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 1.0,
+        "recall_iou_75": 0.9833333333333333
+      },
+      "AZ": {
+        "document_type_accuracy": 1.0,
+        "examples": 60,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9506556052247903,
+        "negative_examples": 0,
+        "positive_examples": 60,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 0.9833333333333333,
+        "recall_iou_75": 0.9833333333333333
+      },
+      "BD": {
+        "document_type_accuracy": 1.0,
+        "examples": 48,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9803406517020735,
+        "negative_examples": 0,
+        "positive_examples": 48,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 1.0,
+        "recall_iou_75": 1.0
+      },
+      "EE": {
+        "document_type_accuracy": 1.0,
+        "examples": 60,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9434787938859891,
+        "negative_examples": 0,
+        "positive_examples": 60,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 1.0,
+        "recall_iou_75": 1.0
+      },
+      "ES": {
+        "document_type_accuracy": 1.0,
+        "examples": 60,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9348338348209958,
+        "negative_examples": 0,
+        "positive_examples": 60,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 0.9833333333333333,
+        "recall_iou_75": 0.9666666666666667
+      },
+      "FI": {
+        "document_type_accuracy": 1.0,
+        "examples": 60,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9292288842885961,
+        "negative_examples": 0,
+        "positive_examples": 60,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 1.0,
+        "recall_iou_75": 0.9833333333333333
+      },
+      "GR": {
+        "document_type_accuracy": 1.0,
+        "examples": 60,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9420227825384379,
+        "negative_examples": 0,
+        "positive_examples": 60,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 0.9833333333333333,
+        "recall_iou_75": 0.9666666666666667
+      },
+      "IN": {
+        "document_type_accuracy": 1.0,
+        "examples": 1221,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.926028489343862,
+        "negative_examples": 288,
+        "positive_examples": 933,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 0.977491961414791,
+        "recall_iou_75": 0.9603429796355841
+      },
+      "LK": {
+        "document_type_accuracy": 1.0,
+        "examples": 48,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.978983335820442,
+        "negative_examples": 0,
+        "positive_examples": 48,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 1.0,
+        "recall_iou_75": 1.0
+      },
+      "LV": {
+        "document_type_accuracy": 1.0,
+        "examples": 60,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9604253636761687,
+        "negative_examples": 0,
+        "positive_examples": 60,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 1.0,
+        "recall_iou_75": 1.0
+      },
+      "NP": {
+        "document_type_accuracy": 0.8405797101449275,
+        "examples": 69,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.8683483958722817,
+        "negative_examples": 0,
+        "positive_examples": 69,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 0.9130434782608695,
+        "recall_iou_75": 0.782608695652174
+      },
+      "RS": {
+        "document_type_accuracy": 1.0,
+        "examples": 60,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9549116238947574,
+        "negative_examples": 0,
+        "positive_examples": 60,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 1.0,
+        "recall_iou_75": 0.9833333333333333
+      },
+      "RU": {
+        "document_type_accuracy": 1.0,
+        "examples": 60,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9628229167034438,
+        "negative_examples": 0,
+        "positive_examples": 60,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 1.0,
+        "recall_iou_75": 1.0
+      },
+      "SK": {
+        "document_type_accuracy": 1.0,
+        "examples": 60,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9257760800796749,
+        "negative_examples": 0,
+        "positive_examples": 60,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 1.0,
+        "recall_iou_75": 0.9666666666666667
+      }
+    },
+    "by_dataset": {
+      "midv-2020-v1-core": {
+        "document_type_accuracy": 1.0,
+        "examples": 600,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9434132550126073,
+        "negative_examples": 0,
+        "positive_examples": 600,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 0.995,
+        "recall_iou_75": 0.9833333333333333
+      },
+      "midv-lait-v1-india-nepal-subset": {
+        "document_type_accuracy": 0.9708994708994709,
+        "examples": 378,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.8242446862585882,
+        "negative_examples": 0,
+        "positive_examples": 378,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 0.9285714285714286,
+        "recall_iou_75": 0.8624338624338624
+      },
+      "synthetic-south-asia-id-v2": {
+        "document_type_accuracy": 1.0,
+        "examples": 1008,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9810884442615903,
+        "negative_examples": 288,
+        "positive_examples": 720,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 1.0,
+        "recall_iou_75": 1.0
+      }
+    },
+    "by_document_type": {
+      "AL_ID_CARD": {
+        "document_type_accuracy": 1.0,
+        "examples": 60,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9299766650132185,
+        "negative_examples": 0,
+        "positive_examples": 60,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 1.0,
+        "recall_iou_75": 0.9833333333333333
+      },
+      "AZ_PASSPORT": {
+        "document_type_accuracy": 1.0,
+        "examples": 60,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9506556052247903,
+        "negative_examples": 0,
+        "positive_examples": 60,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 0.9833333333333333,
+        "recall_iou_75": 0.9833333333333333
+      },
+      "BD_NID": {
+        "document_type_accuracy": 1.0,
+        "examples": 48,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9803406517020735,
+        "negative_examples": 0,
+        "positive_examples": 48,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 1.0,
+        "recall_iou_75": 1.0
+      },
+      "EE_ID_CARD": {
+        "document_type_accuracy": 1.0,
+        "examples": 60,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9434787938859891,
+        "negative_examples": 0,
+        "positive_examples": 60,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 1.0,
+        "recall_iou_75": 1.0
+      },
+      "ES_ID_CARD": {
+        "document_type_accuracy": 1.0,
+        "examples": 60,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9348338348209958,
+        "negative_examples": 0,
+        "positive_examples": 60,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 0.9833333333333333,
+        "recall_iou_75": 0.9666666666666667
+      },
+      "FI_ID_CARD": {
+        "document_type_accuracy": 1.0,
+        "examples": 60,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9292288842885961,
+        "negative_examples": 0,
+        "positive_examples": 60,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 1.0,
+        "recall_iou_75": 0.9833333333333333
+      },
+      "GR_PASSPORT": {
+        "document_type_accuracy": 1.0,
+        "examples": 60,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9420227825384379,
+        "negative_examples": 0,
+        "positive_examples": 60,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 0.9833333333333333,
+        "recall_iou_75": 0.9666666666666667
+      },
+      "IN_AADHAAR": {
+        "document_type_accuracy": 1.0,
+        "examples": 453,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.8668001476213277,
+        "negative_examples": 0,
+        "positive_examples": 453,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 0.9536423841059603,
+        "recall_iou_75": 0.9183222958057395
+      },
+      "IN_ABHA": {
+        "document_type_accuracy": 1.0,
+        "examples": 96,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9813721280548782,
+        "negative_examples": 0,
+        "positive_examples": 96,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 1.0,
+        "recall_iou_75": 1.0
+      },
+      "IN_DRIVING_LICENCE": {
+        "document_type_accuracy": 1.0,
+        "examples": 96,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9813580510159455,
+        "negative_examples": 0,
+        "positive_examples": 96,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 1.0,
+        "recall_iou_75": 1.0
+      },
+      "IN_EPIC": {
+        "document_type_accuracy": 1.0,
+        "examples": 96,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9810672119317286,
+        "negative_examples": 0,
+        "positive_examples": 96,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 1.0,
+        "recall_iou_75": 1.0
+      },
+      "IN_PAN": {
+        "document_type_accuracy": 1.0,
+        "examples": 96,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9764757851801421,
+        "negative_examples": 0,
+        "positive_examples": 96,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 1.0,
+        "recall_iou_75": 1.0
+      },
+      "IN_PASSPORT": {
+        "document_type_accuracy": 1.0,
+        "examples": 96,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9893530080398228,
+        "negative_examples": 0,
+        "positive_examples": 96,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 1.0,
+        "recall_iou_75": 1.0
+      },
+      "LK_NIC": {
+        "document_type_accuracy": 1.0,
+        "examples": 48,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.978983335820442,
+        "negative_examples": 0,
+        "positive_examples": 48,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 1.0,
+        "recall_iou_75": 1.0
+      },
+      "LV_PASSPORT": {
+        "document_type_accuracy": 1.0,
+        "examples": 60,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9604253636761687,
+        "negative_examples": 0,
+        "positive_examples": 60,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 1.0,
+        "recall_iou_75": 1.0
+      },
+      "NON_ID": {
+        "document_type_accuracy": 0.0,
+        "examples": 288,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.0,
+        "negative_examples": 288,
+        "positive_examples": 0,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 0.0,
+        "recall_iou_75": 0.0
+      },
+      "NP_ID_CARD": {
+        "document_type_accuracy": 0.8405797101449275,
+        "examples": 69,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.8683483958722817,
+        "negative_examples": 0,
+        "positive_examples": 69,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 0.9130434782608695,
+        "recall_iou_75": 0.782608695652174
+      },
+      "RS_PASSPORT": {
+        "document_type_accuracy": 1.0,
+        "examples": 60,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9549116238947574,
+        "negative_examples": 0,
+        "positive_examples": 60,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 1.0,
+        "recall_iou_75": 0.9833333333333333
+      },
+      "RU_INTERNAL_PASSPORT": {
+        "document_type_accuracy": 1.0,
+        "examples": 60,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9628229167034438,
+        "negative_examples": 0,
+        "positive_examples": 60,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 1.0,
+        "recall_iou_75": 1.0
+      },
+      "SK_ID_CARD": {
+        "document_type_accuracy": 1.0,
+        "examples": 60,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9257760800796749,
+        "negative_examples": 0,
+        "positive_examples": 60,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 1.0,
+        "recall_iou_75": 0.9666666666666667
+      }
+    },
+    "by_modality": {
+      "camera_capture": {
+        "document_type_accuracy": 0.9694444444444444,
+        "examples": 360,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.8163108170327157,
+        "negative_examples": 0,
+        "positive_examples": 360,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 0.925,
+        "recall_iou_75": 0.8555555555555555
+      },
+      "camera_degraded": {
+        "document_type_accuracy": 1.0,
+        "examples": 252,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9804233111301051,
+        "negative_examples": 72,
+        "positive_examples": 180,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 1.0,
+        "recall_iou_75": 1.0
+      },
+      "camera_rotated": {
+        "document_type_accuracy": 1.0,
+        "examples": 252,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9755422627791362,
+        "negative_examples": 72,
+        "positive_examples": 180,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 1.0,
+        "recall_iou_75": 1.0
+      },
+      "flat_scan": {
+        "document_type_accuracy": 1.0,
+        "examples": 252,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9830190562409431,
+        "negative_examples": 72,
+        "positive_examples": 180,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 1.0,
+        "recall_iou_75": 1.0
+      },
+      "scan_rotated": {
+        "document_type_accuracy": 1.0,
+        "examples": 200,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9019308595003772,
+        "negative_examples": 0,
+        "positive_examples": 200,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 0.985,
+        "recall_iou_75": 0.95
+      },
+      "scan_upright": {
+        "document_type_accuracy": 1.0,
+        "examples": 200,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9477337981616748,
+        "negative_examples": 0,
+        "positive_examples": 200,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 1.0,
+        "recall_iou_75": 1.0
+      },
+      "template": {
+        "document_type_accuracy": 1.0,
+        "examples": 470,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9828494100262172,
+        "negative_examples": 72,
+        "positive_examples": 398,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 1.0,
+        "recall_iou_75": 1.0
+      }
+    },
+    "by_script": {
+      "bengali": {
+        "document_type_accuracy": 1.0,
+        "examples": 42,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.8540380999059659,
+        "negative_examples": 0,
+        "positive_examples": 42,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 1.0,
+        "recall_iou_75": 0.9761904761904762
+      },
+      "devanagari": {
+        "document_type_accuracy": 1.0,
+        "examples": 21,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9155569065786567,
+        "negative_examples": 0,
+        "positive_examples": 21,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 1.0,
+        "recall_iou_75": 1.0
+      },
+      "gujarati": {
+        "document_type_accuracy": 1.0,
+        "examples": 42,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.8838592628178875,
+        "negative_examples": 0,
+        "positive_examples": 42,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 1.0,
+        "recall_iou_75": 0.9523809523809523
+      },
+      "gurmukhi": {
+        "document_type_accuracy": 1.0,
+        "examples": 42,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.5603730190046233,
+        "negative_examples": 0,
+        "positive_examples": 42,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 0.5238095238095238,
+        "recall_iou_75": 0.5238095238095238
+      },
+      "kannada": {
+        "document_type_accuracy": 1.0,
+        "examples": 42,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.8222205059818395,
+        "negative_examples": 0,
+        "positive_examples": 42,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 0.9761904761904762,
+        "recall_iou_75": 0.8809523809523809
+      },
+      "latin": {
+        "document_type_accuracy": 1.0,
+        "examples": 1008,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9810884442615903,
+        "negative_examples": 288,
+        "positive_examples": 720,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 1.0,
+        "recall_iou_75": 1.0
+      },
+      "latin_or_cyrillic": {
+        "document_type_accuracy": 1.0,
+        "examples": 600,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9434132550126073,
+        "negative_examples": 0,
+        "positive_examples": 600,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 0.995,
+        "recall_iou_75": 0.9833333333333333
+      },
+      "malayalam": {
+        "document_type_accuracy": 1.0,
+        "examples": 42,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9202554831827031,
+        "negative_examples": 0,
+        "positive_examples": 42,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 1.0,
+        "recall_iou_75": 1.0
+      },
+      "mixed": {
+        "document_type_accuracy": 0.47619047619047616,
+        "examples": 21,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.6149452562552995,
+        "negative_examples": 0,
+        "positive_examples": 21,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 0.7142857142857143,
+        "recall_iou_75": 0.2857142857142857
+      },
+      "odia": {
+        "document_type_accuracy": 1.0,
+        "examples": 42,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.9081852841111585,
+        "negative_examples": 0,
+        "positive_examples": 42,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 1.0,
+        "recall_iou_75": 0.9761904761904762
+      },
+      "tamil": {
+        "document_type_accuracy": 1.0,
+        "examples": 42,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.8462569335159609,
+        "negative_examples": 0,
+        "positive_examples": 42,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 1.0,
+        "recall_iou_75": 0.8095238095238095
+      },
+      "telugu": {
+        "document_type_accuracy": 1.0,
+        "examples": 42,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0,
+        "mean_polygon_iou": 0.8577625063901761,
+        "negative_examples": 0,
+        "positive_examples": 42,
+        "presence_accuracy": 1.0,
+        "recall_iou_50": 1.0,
+        "recall_iou_75": 1.0
+      }
+    },
+    "classification": {
+      "accuracy": 0.9935217903415783,
+      "macro_f1": 0.9948100099379904,
+      "per_class": {
+        "AL_ID_CARD": {
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "support": 60
+        },
+        "AZ_PASSPORT": {
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "support": 60
+        },
+        "BD_NID": {
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "support": 48
+        },
+        "EE_ID_CARD": {
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "support": 60
+        },
+        "ES_ID_CARD": {
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "support": 60
+        },
+        "FI_ID_CARD": {
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "support": 60
+        },
+        "GR_PASSPORT": {
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "support": 60
+        },
+        "IN_AADHAAR": {
+          "f1": 0.9880043620501636,
+          "precision": 0.9762931034482759,
+          "recall": 1.0,
+          "support": 453
+        },
+        "IN_ABHA": {
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "support": 96
+        },
+        "IN_DRIVING_LICENCE": {
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "support": 96
+        },
+        "IN_EPIC": {
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "support": 96
+        },
+        "IN_PAN": {
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "support": 96
+        },
+        "IN_PASSPORT": {
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "support": 96
+        },
+        "LK_NIC": {
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "support": 48
+        },
+        "LV_PASSPORT": {
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "support": 60
+        },
+        "NP_ID_CARD": {
+          "f1": 0.9133858267716535,
+          "precision": 1.0,
+          "recall": 0.8405797101449275,
+          "support": 69
+        },
+        "RS_PASSPORT": {
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "support": 60
+        },
+        "RU_INTERNAL_PASSPORT": {
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "support": 60
+        },
+        "SK_ID_CARD": {
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "support": 60
+        }
+      }
+    },
+    "overall": {
+      "document_type_accuracy": 0.9935217903415783,
+      "examples": 1986,
+      "false_negative_rate": 0.0,
+      "false_positive_rate": 0.0,
+      "mean_polygon_iou": 0.9328599082930835,
+      "negative_examples": 288,
+      "positive_examples": 1698,
+      "presence_accuracy": 1.0,
+      "recall_iou_50": 0.9823321554770318,
+      "recall_iou_75": 0.9634864546525324
+    }
+  },
+  "split": "validation"
+}
